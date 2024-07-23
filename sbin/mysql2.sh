@@ -1,0 +1,1 @@
+docker exec -it db2 mysql -uroot -proot

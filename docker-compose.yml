@@ -1,0 +1,33 @@
+version: '3.7'
+services:
+  db1:
+    image: mysql:5.7
+    container_name: db1
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: db1
+      MYSQL_USER: user1
+      MYSQL_PASSWORD: root
+      TZ: Asia/Shanghai
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./db1:/var/lib/mysql
+      - ./conf1:/etc/mysql/mysql.conf.d
+      - /etc/localtime:/etc/localtime:ro
+
+  db2:
+    image: mysql:5.7
+    container_name: db2
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: db2
+      MYSQL_USER: user2
+      MYSQL_PASSWORD: root
+      TZ: Asia/Shanghai
+    ports:
+      - "3307:3306"
+    volumes:
+      - ./db2:/var/lib/mysql
+      - ./conf2:/etc/mysql/mysql.conf.d
+      - /etc/localtime:/etc/localtime:ro
