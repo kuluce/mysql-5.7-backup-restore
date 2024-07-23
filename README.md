@@ -1,4 +1,3 @@
-```markdown
 # MySQL 5.7 Backup and Restore
 
 This repository provides a comprehensive solution for automating the backup and restore processes of MySQL 5.7 databases using Docker. The scripts included offer full and incremental backup capabilities, as well as the ability to manage historical backups.
