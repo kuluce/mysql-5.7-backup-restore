@@ -1,5 +1,3 @@
-Sure! Based on the content provided in the GitHub repository [kuluce/mysql-5.7-backup-restore](https://github.com/kuluce/mysql-5.7-backup-restore), here is a rewritten README.md file:
-
 ```markdown
 # MySQL 5.7 Backup and Restore
 
